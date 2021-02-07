@@ -13,7 +13,7 @@ University ID:2201002394
 
 ```{r load-packages, message=FALSE}
 library(tidyverse) 
-library(datasauRus)
+
 ```
 
 
