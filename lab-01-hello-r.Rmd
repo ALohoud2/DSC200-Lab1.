@@ -2,7 +2,8 @@
 title: "Lab 01 - Hello R"
 author: "ALahoud Faleh"
 date: "1/27/2021"
-output:htm1_document
+output: htm1_document
+
 
   
 ---
