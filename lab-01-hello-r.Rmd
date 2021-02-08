@@ -2,9 +2,9 @@
 title: "Lab 01 - Hello R"
 author: "ALahoud Faleh"
 date: "1/27/2021"
-output:
-  html_document: default
-  pdf_document: default
+output:htm1_document
+
+  
 ---
 
 University ID:2201002394
