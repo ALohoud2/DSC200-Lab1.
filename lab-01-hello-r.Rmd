@@ -2,7 +2,11 @@
 title: "Lab 01 - Hello R"
 author: "aLahoud Faleh"
 date: "1/2/2021"
-output: html_document
+output: 
+  html_document: 
+    theme: readable
+    fig_width: 11
+    fig_height: 7
 ---
 
 University ID:2201002394
@@ -10,7 +14,7 @@ University ID:2201002394
 ### Load packages
 
 ```{r load-packages, message=FALSE}
-library(tid) 
+library(tidyverse) 
 library(datasauRus)
 
 ```
@@ -23,3 +27,17 @@ library(datasauRus)
 > head(datasaurus_dozen)
 >summary(datasaurus_dozen) 
 >View(datasaurus_dozen))
+
+Answer Task 2
+
+(>datasaurus_dozen %>%count(dataset) %>%print(13)
+> dino_data <- datasaurus_dozen %>%filter(dataset == "dino")
+> gplot(data = dino_data, mapping = aes(x = x, y = y)) +geom_point() > dino_data %>%summarize(r = cor(x, y)) 
+
+Answer Task 3
+
+(> star_data <- datasaurus_dozen %>%filter(dataset == "star")
+> ggplot(data = star_data, mapping = aes(x = x, y = y)) +geom_point() > star_data %>%summarize(r = cor(x, y))
+
+Answer Task 4
+(> circle_data <- datasaurus_dozen %>%filter(dataset == "circle") > ggplot(data = circle_data, mapping = aes(x = x, y = y)) +geom_point() > circle_data %>%summarize(r = cor(x, y))
